@@ -13,20 +13,24 @@ import Videos from '@/components/video/videos'
 
 export default function Home() {
   return (
-    <main>
 
-      <h1>Website Unser Maintenance</h1>
-      <Navbar />
-      <Main />
-      <Degree />
-      <Offer />
-      <Innovation />
+    <h1>Website Unser Maintenance</h1>
+  //   <main>
+
       
-      <Testimonials />
-      <News />
-      <Videos />
-      <Blog />
-      <Footer />
-    </main>
+  //     <Navbar />
+  //     <Main />
+  //     <Degree />
+  //     <Offer />
+  //     <Innovation />
+      
+  //     <Testimonials />
+  //     <News />
+  //     <Videos />
+  //     <Blog />
+  //     <Footer />
+  //   </main>
+  // 
+  
   )
 }
