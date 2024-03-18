@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'AxiformaBold';
+  src: url('../../public/fonts/Axiforma-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'AxiformaMedium';
+  src: url('../../public/fonts/Axiforma-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'AxiformaRegular';
+  src: url('../../public/fonts/Axiforma-Regular.ttf');
+}
+
+.axiformaBold {
+  font-family: 'AxiformaBold';
+}
+.axiformaRegular {
+  font-family: 'AxiformaRegular';
+}
+.AxiformaMedium {
+  font-family: 'AxiformaMedium';
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body,
+body p {
+  font-family: 'AxiformaRegular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'AxiformaBold';
+}
