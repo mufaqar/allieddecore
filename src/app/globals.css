@@ -54,3 +54,8 @@ h5,
 h6 {
   font-family: 'AxiformaBold';
 }
+
+.sticky-nav {
+  position: sticky;
+  top: 0; /* Ensure it sticks to the top of the viewport */
+}

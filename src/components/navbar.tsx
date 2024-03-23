@@ -2,7 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { BsArrowRight } from 'react-icons/bs'
+import { BsArrowRight, BsArrowLeft } from 'react-icons/bs';
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,9 +12,10 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+
   return (
-    <nav className="">
-      <div className="container mx-auto flex items-center justify-between py-5 px-4">
+    <nav className="absolute top-0 w-full bg-gradient-to-b from-black/40 to-white/10 sticky-nav" >
+      <div className="container mx-auto flex items-center justify-between py-5 px-4 relative z-10">
         <div className='md:w-1/5'>
           <Link href="/">
             <Image src="/images/logo.svg" alt="Rehab Fit" width={280} height={56} className='md:w-auto w-56' />
@@ -21,8 +23,8 @@ function Navbar() {
         </div>
         <div className="md:w-4/5 hidden md:flex items-center justify-end gap-8">
           <Link href="/" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">Home</Link>
-          <Link href="/about" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">About Us</Link>
-          <Link href="/services" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">Our Offerings</Link>
+          <Link href="/about" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">Projects</Link>
+          <Link href="/services" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">Services</Link>
           <Link href="https://api.whatsapp.com/send?phone=923203588468&text=Physiotherapy%20Clinic%20Innovation,%20Integration,%20Accessibility" target='_blank' className="text-[#0B577E] hover:text-[#0E9CD9] font-semibold AxiformaMedium flex items-center gap-1.5 hover:opacity-60">
             <Image src="/images/whatapp.svg" alt="Rehab Fit" width={40} height={40} className='' />
             +92 320 3588468
@@ -32,13 +34,15 @@ function Navbar() {
           </Link>
         </div>
         <div className="md:hidden flex items-center">
-          <button onClick={toggleMenu} className=" focus:outline-none">
+          <button onClick={toggleMenu} className="focus:outline-none">
             <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
           </button>
         </div>
       </div>
+  
+
       {isOpen && (
         <div className="md:hidden bg-white w-full absolute top-14 left-0 right-0 py-10 px-4 grid gap-3">
           <Link href="/" className="hover:opacity-70 text-lg axiformaRegular hover:text-[#0E9CD9]">Home</Link>
@@ -53,6 +57,10 @@ function Navbar() {
           </Link>
         </div>
       )}
+
+     
+  
+
     </nav>
   );
 }

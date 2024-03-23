@@ -1,22 +1,22 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-function about() {
+function About() {
   return (
-    <div className='bg-[#F3F9FD]'>
-    <div className='container mx-auto px-4'>
-       <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5 py-14'>
-       <div className='mx-auto'>
-           <Image src="/images/Mask.png" alt="Rehab Fit" width={450} height={650} className='w-[400px] h-[500px]' />
-        </div>
-        <div className='mx-auto mt-8'>
-            <h2 className='lg:text-[50px] md:text-[40px] text-[30px] axiformaRegular font-bold py-5 lg:leading-[10vh] text-[#0B577E]'>Dr Darkhshan Nausheen Physiotherapist</h2>
-            <p className='text-[#363853] text-[22px] axiformaRegular'>Welcome to Rehab Fit by Physio Connect largest Integrative and most accessible rehabilitation provider. Our clinicians pride themselves ensuring the highest quality of care is accessible to every member . With our Innovative, Integrative, Accessible Rehabilitative care, you can rest assured that you will recover as quickly as possible with evidence-based gold standard treatment.</p>
-        </div>
-       </div>
+    <div className='  container mx-auto px-4 py-20'>
+      <div className='flex justify-between items-center'>
+    <div className=' lg:w-[480px] md:w-[400px] py-10'>
+      <p className='text-5xl '>About</p>
+   <p className='text-[12px] leading-normal py-10 text-[rgb(181,171,161)]'>UBBS is vastly experienced at working across sectors – Residential, Hospitality and Commercial, and across disciplines – Architecture and Interior Design. We offer a multifaceted, entirely bespoke design service, focussed around achieving the best possible end result. Energy efficiency and sustainability issues are given serious consideration at the outset of the design process, in particular on new-build projects</p>
+   <Link href={'/abouts'} className='border-b-[1px] pb-[2px] hover:border-red-500 duration-1000 border-[#c0b8b0] text-[#615b55]  text-sm tracking-widest '>MEET THE TEAM</Link>
+    </div>
+    <div className='md:w-[600px] lg:w-[600px]'>
+    <img className='hover:scale-90 cursor-pointer duration-1000 h-[400px]' src='/images/about.jpg' alt='img'/>
     </div>
     </div>
+    </div>
+    
   )
 }
 
-export default about
+export default About
