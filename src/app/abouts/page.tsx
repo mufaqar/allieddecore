@@ -67,11 +67,13 @@ function About() {
                     <p className='text-[12px] text-[#bbb3ac]'>UBBS is a highly experienced architecture and interior design firm that operates across various sectors including Residential, Hospitality, Commercial, and Retail. One of our core strengths at UBBS is our ability to deliver bespoke design solutions that are tailored to our clients’ specific needs and preferences.</p>
                     <p className='text-[12px] text-[#bbb3ac]'>At UBBS London, sustainability is at the forefront of our design philosophy. We believe that architecture and design should be environmentally responsible, and we work closely with our clients to create spaces that are energy-efficient and sustainable.</p>
                 </div>
+                </div>
                 <div>
                     <img className='cursor-pointer w-full h-screen' src='/images/about.jpg' alt='img' />
                 </div>
-                <div>
-                    <h1>Meet The Team</h1>
+                <div className='container px-4 mx-auto'>
+                <div className='py-16 '>
+                    <h1 className='text-5xl font-sans py-10'>Meet The Team</h1>
                     <div className=' relative lg:grid md:grid lg:grid-cols-3 md:grid-cols-3 gap-6'>
                         {data.map((item, index) => (
                             <div key={index} className='md:w-[400px]'>
@@ -93,23 +95,23 @@ function About() {
 
                     </div>
                 </div>
-                <div className='py-24'>
-                    <h1>Awards & Publications</h1>
+                <div className='py-8'>
+                    <h1 className='text-5xl font-sans pb-28'>Awards & Publications</h1>
                     <div>
                         <div className='relative overflow-x-auto'>
                             <table className='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'>
-                                <thead className='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
+                                <thead className='text-xs text-gray-700  bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
                                     <tr>
-                                        <th scope='col' className='px-6 py-3'>
+                                        <th scope='col' className='px-6 py-3 text-lg font-normal font-sans'>
                                             Project
                                         </th>
-                                        <th scope='col' className='px-6 py-3'>
+                                        <th scope='col' className='px-16 py-3 text-lg font-normal font-sans'>
                                             Context
                                         </th>
-                                        <th scope='col' className='px-6 py-3'>
+                                        <th scope='col' className='px-16 py-3 text-lg font-normal font-sans'>
                                             Year
                                         </th>
-                                        <th scope='col' className='px-6 py-3'>
+                                        <th scope='col' className='px-16 py-3 text-lg font-normal font-sans'>
                                             Link
                                         </th>
                                     </tr>
@@ -124,16 +126,16 @@ function About() {
                                                 onMouseLeave={() => {
                                                     setHoveredImage(''); // Reset hover image when mouse leaves
                                                 }}
-                                                className='px-6 py-8 font-sans whitespace-nowrap relative' // Add relative class here
+                                                className='px-6 py-12 font-sans whitespace-nowrap relative' // Add relative class here
                                             >
                                                 {item.project}
                                                 {hoveredImage === item.img && (
                                                     <img src={hoveredImage} alt='hovered img' className='absolute top-full left-0 w-16 h-16' /> // Position the image absolutely
                                                 )}
                                             </td>
-                                            <td className='px-6 py-8 font-sans'>{item.context}</td>
-                                            <td className='px-6 py-8 font-sans'>{item.year}</td>
-                                            <td className='px-6 py-8 font-sans'> {item.link}</td>
+                                            <td className='px-16 py-12 font-sans'>{item.context}</td>
+                                            <td className='px-16 py-12 font-sans'>{item.year}</td>
+                                            <td className='px-16 py-12 font-sans'> {item.link}</td>
                                         </tr>
                                     ))}
 

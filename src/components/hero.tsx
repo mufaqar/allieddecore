@@ -85,10 +85,10 @@ link:"www.faceebook.com"
 </div>
     
       
-        <div className='flex justify-between absolute bottom-0 px-4 mx-auto container w-full'>
+        <div className='flex justify-between absolute bottom-4 px-4 mx-auto container w-full'>
         {images.map((item, index) => (
           <div key={index}>
-            <button onClick={() => handleButtonClick(index)} className='text-red-600 cursor-pointer underline font-bold '>{item.text}</button>
+            <button onClick={() => handleButtonClick(index)} className='text-yellow-400 cursor-pointer hover:text-white hover:border-red-500 border-b-[4px] font-bold pb-[2px] border-yellow-400'>{item.text}</button>
           </div>
         ))}
     
