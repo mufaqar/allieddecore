@@ -14,7 +14,7 @@ function Navbar() {
 
 
   return (
-    <nav className="absolute top-0 w-full bg-gradient-to-b from-black/40 to-white/10 sticky-nav" >
+    <nav className="absolute top-0 w-full bg-gradient-to-b from-black/40 to-white/10 sticky-nav z-50" >
       <div className="container mx-auto flex items-center justify-between py-5 px-4 relative z-10">
         <div className='md:w-1/5'>
           <Link href="/">
@@ -22,9 +22,9 @@ function Navbar() {
           </Link>
         </div>
         <div className="md:w-4/5 hidden md:flex items-center justify-end gap-8">
-          <Link href="/" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">Home</Link>
-          <Link href="/about" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">Projects</Link>
-          <Link href="/services" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">Services</Link>
+          <Link href="/" className="font-semibold text-lg text-white axiformaRegular hover:text-[#0E9CD9]">Home</Link>
+          <Link href="/about" className="font-semibold text-lg text-white axiformaRegular hover:text-[#0E9CD9]">Projects</Link>
+          <Link href="/services" className="font-semibold text-lg text-white axiformaRegular hover:text-[#0E9CD9]">Services</Link>
           <Link href="https://api.whatsapp.com/send?phone=923203588468&text=Physiotherapy%20Clinic%20Innovation,%20Integration,%20Accessibility" target='_blank' className="text-[#0B577E] hover:text-[#0E9CD9] font-semibold AxiformaMedium flex items-center gap-1.5 hover:opacity-60">
             <Image src="/images/whatapp.svg" alt="Rehab Fit" width={40} height={40} className='' />
             +92 320 3588468

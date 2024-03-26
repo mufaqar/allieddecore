@@ -7,11 +7,7 @@ import { TiSocialFacebook,TiSocialPinterest,TiSocialLinkedin } from "react-icons
 import { FaWhatsappSquare } from "react-icons/fa";
 
 function Hero() {
-  
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-
-
   const images = [
     { src: '/images/f1.jpg', des: 'Leading architecture & interior design studio in London.' , text:'Our Company'},
     { src: '/images/f2.jpg', des: 'Beautifully crafted global homes and retreats.', text:'Residential' },

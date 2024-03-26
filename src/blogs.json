@@ -1,0 +1,56 @@
+
+[{
+    "id":"1",
+    "img":"/blogs/blog1.jpeg",
+    "title":"Urban design trends",
+    "date":"07 March 2024",
+    "h1":"Introduction",
+    "des1":"Urban design is a multidisciplinary field that seeks to create functional, aesthetically pleasing, and sustainable built environments. As cities continue to grow and evolve, urban design trends also shift in response to new challenges and emerging technologies. In this article, we will explore some of the latest trends in urban design.",
+    "h2":"Sustainable design",
+    "des2":"As environmental\n concerns become more urgent, sustainable design is increasingly becoming a priority in urban planning. This involves incorporating features such as green roofs, rain gardens, and sustainable transportation options into urban design plans. Cities are also embracing renewable energy sources like solar and wind power to reduce their carbon footprint.",
+    "h3":"Balance",
+    "des3":"Balance refers to the distribution of visual weight in a space. A well-balanced room is visually pleasing and comfortable to be in. There are three types of balance: symmetrical, asymmetrical, and radial.",
+    "author":"by Anna Uborevich-Borovskaya"
+    
+},
+{
+    "id":"2",
+    "img":"/blogs/blog2.jpg",
+    "title":"Principles of interior design",
+    "date":"07 March 2024",
+    "h1":"Introduction",
+    "des1":"Interior design is an art and science of creating functional and aesthetically pleasing spaces. To achieve this, interior designers follow certain principles that guide their decision-making process. The following are some of the main principles of interior design.",
+    "h2":"Unity and harmony",
+    "des2":"Unity and harmony are the most fundamental principles of interior design. The elements of a space should be unified in such a way that they work together to create a cohesive and harmonious look. This can be achieved through the use of color, pattern, texture, and proportion.",
+    "h3":"Balance",
+    "des3":"Balance refers to the distribution of visual weight in a space. A well-balanced room is visually pleasing and comfortable to be in. There are three types of balance: symmetrical, asymmetrical, and radial.",
+    "author":"by Anna Uborevich-Borovskaya"
+},
+{
+    "id":"3",
+    "img":"/blogs/blog3.webp",
+    "title":"Commercial architecture: best practices",
+    "date":"07 March 2024",
+    "h1":"Commercial architecture",
+    "des1":"Commercial architecture design is a vital aspect of modern business. Creating functional, visually appealing, and sustainable commercial spaces is essential for attracting customers, increasing revenue, and improving brand reputation. In this article, we will explore some of the best practices for commercial architecture design.",
+    "h2":"Functional Design",
+    "des2":"The design of commercial architecture must always prioritise functionality over aesthetics. It is essential to focus on creating spaces that meet the needs of the business and its customers. A well-designed commercial space should be easy to navigate, provide an efficient flow of traffic, and optimise space utilisation.",
+    "h3":"Sustainable Design",
+    "des3":"Sustainable design has become a significant factor in commercial architecture design. A building that is sustainable not only contributes to the environment but also reduces energy costs for businesses. Some common sustainable design practices include incorporating natural light, using energy-efficient lighting and heating systems, and selecting sustainable materials.",
+    "author":"by Valerijus Starkovskis"
+},
+
+{
+    "id":"4",
+    "img":"/blogs/blog4.webp",
+    "title":"The future of architecture in hospitality",
+    "date":"07 March 2024",
+    "h1":"Introduction",
+    "des1":"The hospitality industry is continually evolving, and architecture plays a crucial role in creating memorable guest experiences. In recent years, architecture in hospitality has undergone significant changes, and the future is exciting. This article will discuss some of the trends and developments that are shaping the future of architecture in hospitality.",
+    "h2":"Sustainable design",
+    "des2":"Sustainable design is becoming a significant trend in architecture in hospitality. With an increased focus on the environment and social responsibility, hospitality businesses are adopting sustainable practices to reduce their carbon footprint. Architects are designing hotels that use renewable energy sources, water conservation, and sustainable building materials to minimize their impact on the environment.",
+    "h3":"Technology Integration",
+    "des3":"Technology is becoming increasingly essential in the hospitality industry, and architecture must adapt to meet the changing needs of customers. Future hotel designs will incorporate technology to improve the guest experience. This can include features such as smart lighting, temperature control systems, and mobile applications for booking and checking in.",
+    "author":"by Valerijus Starkovskis"
+}
+]
