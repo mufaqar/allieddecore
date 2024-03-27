@@ -15,7 +15,7 @@ function page() {
        
         <Hero/>
         <About/>
-        <Projects/>
+        <Projects data={data}/>
         <Banner/>
         <Blog_sec data={data} />
     </div>

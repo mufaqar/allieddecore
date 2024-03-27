@@ -9,10 +9,10 @@ import { FaWhatsappSquare } from "react-icons/fa";
 function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
-    { src: '/images/f1.jpg', des: 'Leading architecture & interior design studio in London.' , text:'Our Company'},
-    { src: '/images/f2.jpg', des: 'Beautifully crafted global homes and retreats.', text:'Residential' },
-    { src: '/images/f3.jpg', des: 'Commercial focused design led environments', text:'Commercial' },
-    { src: '/images/f4.jpg', des: 'The future of how we live, work and play.' , text:'Hospitality' },
+    { src: '/home/home1.jpg', des: 'Leading architecture & interior design studio in London.' , text:'Our Company'},
+    { src: '/home/home2.jpg', des: 'Beautifully crafted global homes and retreats.', text:'Residential' },
+    { src: '/home/home3.webp', des: 'Commercial focused design led environments', text:'Commercial' },
+    { src: '/home/home4.jpg', des: 'The future of how we live, work and play.' , text:'Hospitality' },
   ];
 const icons=[
   {
@@ -43,9 +43,9 @@ link:"www.faceebook.com"
    setCurrentImageIndex(index);
  }
   return (
-    <div className=' '>
-    <section className="bg-center bg-cover bg-no-repeat relative h-screen" style={{ backgroundImage: `url(${images[currentImageIndex].src})` }}>
-     
+    <div className=' -mt-24'>
+    <section className="bg-center bg-cover bg-no-repeat relative h-screen " style={{ backgroundImage: `url(${images[currentImageIndex].src})` }}>
+    <div className='absolute inset-0 bg-black opacity-60'></div>
 
       {/* Text over image */}
       <div className="absolute top-1/2 container left-1/2   px-4 mx-auto transform -translate-x-1/2 -translate-y-1/2 ">

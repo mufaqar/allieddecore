@@ -2,6 +2,7 @@
 [{
     "id":"1",
     "img":"/blogs/blog1.jpeg",
+    "category":"Residential",
     "title":"Urban design trends",
     "date":"07 March 2024",
     "h1":"Introduction",
@@ -15,6 +16,7 @@
 },
 {
     "id":"2",
+    "category":"Hospitality",
     "img":"/blogs/blog2.jpg",
     "title":"Principles of interior design",
     "date":"07 March 2024",
@@ -28,6 +30,7 @@
 },
 {
     "id":"3",
+    "category":"Commercial",
     "img":"/blogs/blog3.webp",
     "title":"Commercial architecture: best practices",
     "date":"07 March 2024",
@@ -42,6 +45,7 @@
 
 {
     "id":"4",
+    "category":"Retail",
     "img":"/blogs/blog4.webp",
     "title":"The future of architecture in hospitality",
     "date":"07 March 2024",

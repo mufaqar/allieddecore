@@ -1,10 +1,20 @@
-import React from 'react';
+'use client'
+import React,{useState} from 'react';
 import data from '@/blogs.json'
 import Link from "next/link";
 import Slider from "react-slick";
 import Blog_sec from '@/components/blog'
 const  Home=()=> {
-  
+
+  const Categories=["Residential", "Hospitality" , "Commercial" , "Retail"]
+  const [activeCategory, setactiveCategory] = useState(null)
+  const handleCategoryChange =(category:any)=>{
+  setactiveCategory(category)
+  }
+  const AllCategory =()=>{
+    setactiveCategory(null)
+  }
+
   
   return (
     <>
@@ -19,14 +29,37 @@ const  Home=()=> {
         </div>
       </div>
     <section className='container px-4 mx-auto py-10'>
-  
+    
+    <div>
+    <div className='flex justify-between pb-10 border-b-[1px] border-black/20 items-center'>
+        <div className='flex space-x-4 '>
+          {Categories.map((category:any,idx:number)=>{
+            return(
+              <div>
+                 <button
+            className={`rounded-full py-[1px] hover:bg-stone-300 duration-500 px-4 text-[15px] font-thin font-sans border-black/50 border-[1px] ${activeCategory === 'Residential' ? 'bg-stone-300' : ''}`}
+            onClick={() => handleCategoryChange(category)}
+          >
+            {category}
+          </button>
+              </div>
+            )
+          })}
+          <div>
+                 <button
+            className={`rounded-full py-[1px] hover:bg-stone-300 duration-500 px-4 text-[15px] font-thin font-sans border-black/50 border-[1px] ${activeCategory === 'Residential' ? 'bg-stone-300' : ''}`}
+            onClick={AllCategory}
+          >
+            All
+          </button>
+              </div>
+        </div>
+        <p className='text-sm'>Request more information<br/>
+          info@ubbs.uk</p>
+      </div>
+    </div>
 
-<Blog_sec data = {data}/>
-     
-      
-     
-   
-     
+    <Blog_sec data={activeCategory ? data.filter(blog => blog.category === activeCategory) : data} />
     </section>
     </>
   )
