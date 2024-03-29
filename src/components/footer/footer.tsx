@@ -1,121 +1,50 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaFacebook } from 'react-icons/fa';
-import { BsYoutube } from 'react-icons/bs'
-import { AiFillInstagram } from 'react-icons/ai'
-import { AiFillLinkedin } from 'react-icons/ai'
-import { BsTwitter } from 'react-icons/bs'
-import { HiLocationMarker } from 'react-icons/hi'
-import { BsFillTelephoneFill } from 'react-icons/bs'
-
+import Link from 'next/link'
+import React from 'react'
+import { IoIosArrowForward } from "react-icons/io";
 function Footer() {
   return (
-    <footer>
-      <div className='container mx-auto px-4 mt-10'>
-        <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 '>
-          <div>
-            <Link href='/'>
-              <Image src='/images/logo.svg' alt='Rehab Fit' width={450} height={650} className='w-52' />
-            </Link>
-            <p className='py-3 text-sm '>
-              Pain and Disability Management Council is an advanced rehabilitation clinic that creates a customized treatment plan to meet each patient’s unique medical needs including adults and children.
-            </p>
-            <div className='flex gap-4 text-[#0E9CD9] mt-3'>
-              <Link href='https://facebook.com' target='_blank'>
-                <FaFacebook className='text-2xl text-[#0E9CD9] hover:text-[#0B577E]' />
-              </Link>
-              <Link href='/'>
-                <BsYoutube className='text-2xl text-[#0E9CD9] hover:text-[#0B577E]' />
-              </Link>
-              <Link href='/'>
-                <AiFillInstagram className='text-2xl text-[#0E9CD9] hover:text-[#0B577E]' />
-              </Link>
-              <Link href='/'>
-                <AiFillLinkedin className='text-2xl text-[#0E9CD9] hover:text-[#0B577E]' />
-              </Link>
-              <Link href='/'>
-                <BsTwitter className='text-2xl text-[#0E9CD9] hover:text-[#0B577E]' />
-              </Link>
-            </div>
-          </div>
-          <div className=' lg:ml-14'>
-            <ul className='text-sm grid gap-2 md:gap-4'>
-              <li>
-                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Chiropractor Treatment</Link>
-              </li>
-              <li>
-                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Sports Physiotherapy</Link>
-              </li>
-              <li>
-                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Pediatric Physiotherapy</Link>
-              </li>
-              <li>
-                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Home Care Physiotherapy</Link>
-              </li>
-              <li>
-                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Neuro Physiotherapy-Rehab</Link>
-              </li>
-              <li>
-                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Pre And Post Surgery Rehabilitation</Link>
-              </li>
-            </ul>
-          </div>
-          <div className=' md:mt-0'>
-            <ul className='text-sm  grid gap-2 md:gap-4'>
-              <li>
-                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Geriatric Physiotherapy</Link>
-              </li>
-              <li>
-                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Strength Training</Link>
-              </li>
-              <li>
-                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Advanced Physiotherapy</Link>
-              </li>
-              <li>
-                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Women's Health Physiotherapy</Link>
-              </li>
-              <li>
-                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Musculoskeltal Physiotherapy</Link>
-              </li>
-              <li>
-                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Vestibular Rehabilitation (VR)</Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <div>
-              <Link href='/' className='flex gap-3 hover:text-[#0E9CD9] hover:underline'>
-                <HiLocationMarker className='text-6xl text-[#0E9CD9]' />
-                <div>
-                  <h4 className='font-bold'>Address</h4>
-                  <span>
-                    Lahore poly clinic basement FDPP main gate Azam garden Multan road Lahore
-                  </span>
-                </div>
-              </Link>
+    <section className=''>
+    <div className='relative h-[35rem] w-full bg-cover bg-center border-b-[2px] border-black pb-4' style={{backgroundImage:`url('footerbg.webp')`}}>
+   <div className='absolute inset-0 bg-black opacity-50'></div>
+<div className=' absolute top-1/2 mx-auto container px-4 flex items-center md:space-x-96'>
+<h1  className='leading-normal text-white font-normal text-6xl font-sans max-w-[700px]'>Delivering on a mission to create <strong className='font-normal text-white/60'>better spaces.</strong></h1>
+<div className='flex items-center group'> 
+<p className='border-t-white/30 border-r-white/30 border-b-white/30 border-l-black/5  relative ml-20  border-[1px] rounded-full px-12 py-12'></p>
+<Link href={''} className='text-white/60 pr-4 font-sans absolute text-sm whitespace-nowrap flex items-center'>SCHEDULE A CALL <li className='list-none pl-2'><IoIosArrowForward /></li></Link>
+</div>
+</div>
 
-            </div>
-            <div className='py-4'>
-              <Link href='tel:0923055862457' className='flex gap-3 hover:text-[#0E9CD9] hover:underline'>
-                <BsFillTelephoneFill className='text-2xl text-[#0E9CD9]' />
-                <div>
-                  <h4 className='font-bold'>Phone</h4>
-                  <span>+92 305 5862457</span>
-                </div>
-              </Link>
+    </div>
 
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='border mt-10'></div>
-      <div className='flex flex-wrap justify-between items-center text-[12px] container mx-auto px-4 py-3'>
-        <p>Rehabfit 2024 ©, All rights reserved.</p>
-        <p> <Link href="#"> Sitemap </Link> - <Link href="#"> Terms & Conditions</Link> - <Link href="#"> Privacy Policy </Link></p>
-      </div>
-    </footer>
+    <div className='container px-4 mx-auto'>
+<div className='flex justify-between items-center'>
+  <div>
+    <div>
+    <h1>London</h1>
+    <p>London, United Kingdom</p>
+    </div>
+    <div>
+    <h1>Vilnius</h1>
+    <p>Kalinausko 24-7
+Vilnius 03107</p>
+    </div>
+    <div>
+    <h1>Contact</h1>
+    <p>info@ubbs.uk</p>
+    </div>
+  </div>
+  <div>
+    <h1>Request a call</h1>
+    <div className='flex md:w-[400px]'>
+    <input type='text' className='border-b-[2px] md:w-[300px] border-black focus:outline-none placeholder-gray-400' placeholder='Enter Your Email'/>
+      <button className=' rounded-full border-black border-[2px] px-4 py-2 '>Submit</button>
+    </div>
+    <p className='md:w-[400px] text-[10px]'>UBBS London is an architecture and interior design firm based in London. Our services include Architecture, Interior Design, Construction and Administration and Specification.</p>
+  </div>
+</div>
+    </div>
+    </section>
   )
 }
 
-export default Footer;
+export default Footer

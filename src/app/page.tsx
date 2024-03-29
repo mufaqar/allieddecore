@@ -7,7 +7,7 @@ import Offer from '@/components/offer/offer'
 import Innovation from '@/components/innovation/innovation'
 import Testimonials from '@/components/testimonials/testimonials'
 import News from '@/components/news/news'
-import Blog from '@/components/blog/blog'
+
 import Footer from '@/components/footer/footer'
 import Videos from '@/components/video/videos'
 

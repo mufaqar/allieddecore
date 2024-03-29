@@ -42,9 +42,9 @@ function innovation() {
             <Image src="/images/inovation1.png" alt="Rehab Fit" width={602} height={496} className='md:ml-auto' />
             <Image src="/images/video/play.svg" alt="Rehab Fit" width={100} height={100} className='absolute inset-y-1/2 inset-x-1/2 -translate-x-1/2 rounded-full lg:w-[181px] lg:h-[177px]' />
           </Link> */}
-          <Link href="/">
+          {/* <Link href="/">
             <Image src="/images/inovation2.png" alt="Rehab Fit" width={630} height={204} className=' mt-4 md:ml-auto' />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
