@@ -28,7 +28,7 @@ function About() {
             duration: 1,
             ease: "easeIn",
           }} className='text-[12px] leading-normal py-10 text-[rgb(181,171,161)]'>UBBS is vastly experienced at working across sectors – Residential, Hospitality and Commercial, and across disciplines – Architecture and Interior Design. We offer a multifaceted, entirely bespoke design service, focussed around achieving the best possible end result. Energy efficiency and sustainability issues are given serious consideration at the outset of the design process, in particular on new-build projects</motion.p>
-   <Link href={'/abouts'} className='border-b-[1px] pb-[2px] hover:border-red-500 duration-1000 border-[#c0b8b0] text-[#615b55]  text-sm tracking-widest '>MEET THE TEAM</Link>
+   <Link href={'/about'} className='border-b-[1px] pb-[2px] hover:border-red-500 duration-1000 border-[#c0b8b0] text-[#615b55]  text-sm tracking-widest '>MEET THE TEAM</Link>
     </div>
     <div className='md:w-[600px] lg:w-[600px]'>
     <motion.img
