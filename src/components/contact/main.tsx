@@ -2,18 +2,11 @@ import React, { useState } from 'react'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { FaLocationArrow } from 'react-icons/fa'
 import { GrMail } from 'react-icons/gr'
+import { motion } from 'framer-motion'
 import Link from 'next/link';
 import { useFormik } from "formik";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { contactform } from '@/schemas/contactform';
-
-// const initialValues = {
-//   name: '',
-//   phone: '',
-//   services: '',
-//   email: '',
-//   message: '',
-// }
+// import { contactform } from '@/schemas/contactform';
 function Main() {
   const {
     register,
@@ -45,114 +38,178 @@ function Main() {
     });
   }
   return (
-    <div className='bg-[#F3F9FD] w-full h-auto py-14'>
-      <div className='container mx-auto px-4'>
-        <div className='grid lg:grid-cols-2  grid-cols-1 gap-5  '>
-          <div className='lg:w-[460px] w-full mx-auto mt-8'>
-            <div>
-              <h2 className='md:text-5xl text-4xl font-semibold axiformaRegular mb-5'>Where to Find Clinic</h2>
-              <p className='text-base axiformaRegular'>Pain and Disability Management Council is an advanced rehabilitation clinic that creates a customized treatment plan to meet each patient’s unique medical needs including adult and children.</p>
-            </div>
-            <div className='mt-8'>
-              <Link href='/' className='flex gap-3 items-center'>
-                <BsFillTelephoneFill className='text-xl text-[#2563EB] axiformaRegular' />
-                <span>+92 320 3588468 </span>
-              </Link>
-              <Link href='' className='flex gap-3 items-center py-3'>
-                <FaLocationArrow className='text-3xl text-[#2563EB] axiformaRegular' />
-                <span>Lahore poly clinic basement FDPP main gate azam garden multan road lahore</span>
-              </Link>
-              <Link href='' className='flex gap-3 items-center'>
-                <GrMail className='text-2xl text-[#2563eb] axiformaRegular' />
-                <span>opto-template@mail.com opto@test.com</span>
-              </Link>
-            </div>
-          </div>
+    <>
+      <main className='-mt-24'>
+        <div className="h-96 w-full bg-cover bg-center relative" style={{ backgroundImage: `url('contact.webp')` }}>
+          <div className="absolute h-full w-full inset-0 bg-black opacity-70"></div>
+          <div className='px-4 mx-auto container opacity-95'>
+            <p className='pt-28 text-sm font-normal font-sans text-white pb-4'>--------    <span className='pl-4 tracking-[2px]'>BASED IN LONDON</span></p>
+            <h1 className='top-1/2 text-7xl md:w-[750px] font-light leading-[70px] font-sans text-white'>Get in touch</h1>
 
-          <div className='bg-white lg:w-[550px] w-full mx-auto h-auto md:px-10 px-5 py-14 rounded-tr-[80px] rounded-bl-[80px]'>
-            <div>
-              <h3 className='md:text-[32px] text-2xl font-bold text-center axiformaRegular pb-5'>Contact with Us</h3>
-            </div>
-            <form className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5' onSubmit={handleSubmit(onSubmit)}>
-              <div className='w-full'>
-                <label htmlFor='name' className='px-4 py-1 axiformaRegular'>
-                  Name
-                </label>
-                <input
-                  type='text'
-                  id='name'
-                  placeholder='Your Name'
-                  className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] px-5 py-2 outline-none w-full'
-                  {...register("name", { required: true })}
-                />
-                {errors.name && <span className='text-xs text-red-500'>This field is required</span>}
-              </div>
-              <div className='w-full'>
-                <label className='px-4 py-1 axiformaRegular'>Email</label>
-                <input
-                  type='email'
-                  id='email'
-                  placeholder='Email'
-                  className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] outline-none px-5 py-2 w-full'
-                  {...register("email")}
-                />
-                {errors.email && <span className='text-xs text-red-500'>This field is required</span>}
-              </div>
-              <div className='w-full'>
-                <label htmlFor='phone' className='px-4 py-1 axiformaRegular'>
-                  Phone Number
-                </label>
-                <input
-                  type='tel'
-                  id='phone'
-                  placeholder='Your Phone'
-                  className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] px-5 py-2 outline-none w-full'
-                  {...register("phone", { required: true })}
-                />
-                {errors.name && <span className='text-xs text-red-500'>This field is required</span>}
-              </div>
-              <div className='w-full'>
-                <label htmlFor='services' className='px-4 py-1 axiformaRegular'>
-                  Services
-                </label>
-                <select
-                  id='services'
-                  className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] px-5 py-2 outline-none w-full'
-                  {...register("services", { required: true })}
-                >
-                  <option value="services">Services</option>
-                  <option value='Chiropractor Treatment'>Chiropractor Treatment</option>
-                  <option value="Sports Physiotherapy">Sports Physiotherapy</option>
-                  <option value="Pediatric Physiotherapy">Pediatric Physiotherapy</option>
-                  <option value="Neuro Physiotherapy Rehab">Neuro Physiotherapy Rehab</option>
-                  <option value="Pre And Post Surgery Rehabilitation">Pre And Post Surgery Rehabilitation</option>
-                </select>
-                {errors.services && <span className='text-xs text-red-500'>This field is required</span>}
-              </div>
-              <div className='w-full md:col-span-2'>
-                <label htmlFor='message' className='px-4 py-1 axiformaRegular'>
-                  Message
-                </label>
-                <textarea
-                  id='message'
-                  placeholder='Type Your Message'
-                  rows={4}
-                  className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] px-5 py-3 outline-none lg:w-full w-full'
-                  {...register("massage", { required: true })}></textarea>
-              </div>
-              <div className='px-6 w-full md:col-span-2'>
-                <button
-                  className='bg-[#0E9CD9] hover:bg-[#0B577E] px-4 py-3.5 rounded-[5px] rounded-tl-[20px] rounded-br-[20px] text-white text-lg flex items-center gap-2 justify-center w-full'
-                  type='submit'
-                >
-                  Make an Appointment
-                </button>
-              </div>
-            </form>
           </div>
         </div>
-      </div>
-    </div>
+      </main>
+
+      <section className=' w-full h-auto md:pt-14 lg:pt-14 pt-6'>
+        <div className=' px-10  w-full pb-28'>
+        <hr className="h-px mt-16 mb-16 px-4 bg-gray-200 border-0 dark:bg-gray-700"/>
+          <motion.div
+           initial={{ x: '-100%', opacity: 0 }}
+           whileInView={{ x: 0, opacity: 1 }}
+           exit={{ x: '100%', opacity: 0 }}
+           transition={{
+             stiffness: 100,
+             damping: 15,
+             duration: 1,
+             ease: "easeIn",
+           }}
+          className='grid grid-cols-2  md:w-[1200px]'>
+            
+            <p>General</p>
+            <Link href={''} className='text-[14px]  text-black/50'>info@ubbs.uk</Link>
+          </motion.div>
+          <hr className="h-px mt-16 mb-8 px-4 bg-gray-200 border-0 dark:bg-gray-700"/>
+          <motion.div 
+           initial={{ y: '100%', opacity: 0 }}
+           whileInView={{ y: 0, opacity: 1 }}
+           exit={{ y: '100%', opacity: 0 }}
+           transition={{
+             stiffness: 100,
+             damping: 15,
+             duration: 1,
+             ease: "easeIn",
+           }}
+          
+          className='grid grid-cols-2  md:w-[1200px]  lg:w-[1200px]'>
+            <p>Social</p>
+            <div className=''>
+              <Link href={''}><li className='list-none hover:underline font-sans text-[15px] text-black/60'>Instagram</li></Link>
+              <Link href={''}><li className='list-none hover:underline font-sans text-[15px] text-black/60'>Linkedin</li></Link>
+              <Link href={''}><li className='list-none  hover:underline font-sans text-[15px] text-black/60'>Faceebook</li></Link>
+              <Link href={''}><li className='list-none hover:underline font-sans text-[15px] text-black/60'>Pinterest</li></Link>
+            </div>
+          </motion.div>
+          <hr className="h-px mt-16 mb-8 px-4 bg-gray-200 border-0 dark:bg-gray-700"/>
+          <motion.div
+           initial={{ x: '-100%', opacity: 0 }}
+           whileInView={{ x: 0, opacity: 1 }}
+           exit={{ x: '100%', opacity: 0 }}
+           transition={{
+             stiffness: 100,
+             damping: 15,
+             duration: 1,
+             ease: "easeIn",
+           }}
+          className='grid grid-cols-2 lg:w-[1200px] md:w-[1200px]'>
+            <p>Studio</p>
+            <div className='md:flex lg:flex md:space-x-36 lg:space-x-36 space-y-4 md:space-y-0 lg:space-y-0'>
+              <label>London
+                <p className='list-none font-sans text-[15px] text-black/60'>London, United Kingdom</p>
+              </label>
+              <label>Vilnius
+                <p className='list-none font-sans text-[15px] text-black/60'>Kalinausko 24-7<br />
+                  Vilnius 03107</p>
+              </label>
+            </div>
+          </motion.div>
+          <hr className="h-px mt-16 mb-8 px-4 bg-gray-200 border-0 dark:bg-gray-700"/>
+          <motion.div
+            initial={{ y: '100%', opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            exit={{ y: '100%', opacity: 0 }}
+            transition={{
+              stiffness: 100,
+              damping: 15,
+              duration: 1,
+              ease: "easeIn",
+            }}
+          className='grid grid-cols-2 lg:w-[1200px] md:w-[1200px]'>
+            <p>Career</p>
+            <div >
+              <p className='list-none font-sans md:w-[500px] pb-4 text-[14px] text-black/60'>We are constantly seeking talented professionals to join our team and create innovative and inspiring designs. If you're passionate about design and want to make a meaningful impact — you are welcome to get in touch.</p>
+              <Link href={''} className='text-black/60 font-sans text-[15px] '>info@ubbs.uk</Link>
+            </div>
+          </motion.div>
+        </div>
+        <div className='container mx-auto px-4'>
+        </div>
+        <div className='bg-purple-100 py-24'>
+          <motion.form
+            initial={{ y: '-100%', opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            exit={{ y: '100%', opacity: 0 }}
+            transition={{
+              stiffness: 100,
+              damping: 15,
+              duration: 1,
+              ease: "easeIn",
+            }}
+          className='lg:w-[500px] md:w-[500px] px-4  m-auto' onSubmit={handleSubmit(onSubmit)}>
+            <div className='w-full '>
+              <motion.h1
+                initial={{ x: '-100%', opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                exit={{ x: '100%', opacity: 0 }}
+                transition={{
+                  stiffness: 100,
+                  damping: 15,
+                  duration: 1,
+                  ease: "easeIn",
+                }}
+              className='font-serif font-light text-3xl lg:text-5xl md:text-5xl pb-4'>Contact form</motion.h1>
+              <input
+                type='text'
+                id='name'
+                placeholder='Your Name'
+                className=' border-black/30 border-b-[1px] bg-purple-100 focus:outline-none focus:border-black text-sm font-normal font-sans py-2 w-full'
+                {...register("name", { required: true })}
+              />
+              {errors.name && <span className='text-xs text-red-500'>This field is required</span>}
+            </div>
+            <div className='w-full py-4'>
+
+              <input
+                type='email'
+                id='email'
+                placeholder='Email'
+                className='border-black/30 border-b-[1px] bg-purple-100 focus:outline-none focus:border-black text-sm font-normal font-sans py-2 w-full'
+                {...register("email")}
+              />
+              {errors.email && <span className='text-xs text-red-500'>This field is required</span>}
+            </div>
+            <div className='w-full '>
+
+              <input
+                type='tel'
+                id='phone'
+                placeholder='Your Phone'
+                className='border-black/30 border-b-[1px] bg-purple-100 focus:outline-none focus:border-black text-sm font-normal font-sans py-2 w-full'
+                {...register("phone", { required: true })}
+              />
+              {errors.name && <span className='text-xs text-red-500'>This field is required</span>}
+            </div>
+            
+            <div className='w-full  py-4'>
+
+              <textarea
+                id='message'
+                placeholder='Type Your Message'
+                rows={4}
+                className='border-black/30 border-b-[1px] bg-purple-100 focus:outline-none focus:border-black text-sm font-normal font-sans py-2 w-full'
+                {...register("massage", { required: true })}></textarea>
+            </div>
+            <div className=' w-full md:col-span-2'>
+              <button
+                className='bg-[#b5aba1] py-2 rounded-full text-white text-lg   justify-center w-full'
+                type='submit'
+              >
+                Submit
+              </button>
+            </div>
+          </motion.form>
+        </div>
+      </section>
+    </>
   )
 }
 

@@ -29,10 +29,9 @@ const  Home=()=> {
         </div>
       </div>
     <section className='container px-4 mx-auto py-10'>
-    
     <div>
-    <div className='flex justify-between pb-10 border-b-[1px] border-black/20 items-center'>
-        <div className='flex space-x-4 '>
+    <div className='md:flex lg:flex  justify-between pb-10 border-b-[1px] border-black/20 items-center space-y-4 lg:space-y-0 md:space-y-0'>
+        <div className='grid md:grid-cols-5 lg:grid-cols-5 grid-cols-2 gap-4'>
           {Categories.map((category:any,idx:number)=>{
             return(
               <div>

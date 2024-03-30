@@ -1,13 +1,21 @@
 "use client"
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import { motion } from 'framer-motion'
+import React, { useState ,useEffect} from 'react';
 import { BsArrowRight, BsArrowLeft } from 'react-icons/bs';
 import { TiSocialFacebook,TiSocialPinterest,TiSocialLinkedin } from "react-icons/ti";
 import { FaWhatsappSquare } from "react-icons/fa";
 
 function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // 20 seconds
+    return () => clearTimeout(timeoutId);
+  }, [currentImageIndex]);
+ 
   const images = [
     { src: '/home/home1.jpg', des: 'Leading architecture & interior design studio in London.' , text:'Our Company'},
     { src: '/home/home2.jpg', des: 'Beautifully crafted global homes and retreats.', text:'Residential' },
@@ -32,13 +40,7 @@ link:"www.faceebook.com"
         link:"www.linkdein.com"
       }
 ]
-//  const handlePrev = ()=>{
-//    setCurrentImageIndex((previmg)=>(previmg === images.length -1 ? 0 : previmg+1) );
-//  }
- 
-//  const handleNext =()=>{
-//    setCurrentImageIndex((previmg)=>(previmg === 0 ? images.length -1  : previmg-1) );
-//  }
+
  const handleButtonClick = (index:any) => {
    setCurrentImageIndex(index);
  }
@@ -47,20 +49,30 @@ link:"www.faceebook.com"
     <section className="bg-center bg-cover bg-no-repeat relative h-screen " style={{ backgroundImage: `url(${images[currentImageIndex].src})` }}>
     <div className='absolute inset-0 bg-black opacity-60'></div>
 
-      {/* Text over image */}
+
       <div className="absolute top-1/2 container left-1/2   px-4 mx-auto transform -translate-x-1/2 -translate-y-1/2 ">
-        <p className="text-4xl max-w-[600px] font-bold text-white leading-normal pb-10">{images[currentImageIndex].des}</p>
+        <motion.p
+          initial={{ x: '-100%', opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          exit={{ x: '100%', opacity: 0 }}
+          transition={{
+            stiffness: 100,
+            damping: 15,
+            duration: 1,
+            ease: "easeIn",
+          }} className="md:text-4xl w-[250px] text-2xl lg:text-4xl lg:w-[600px] md:w-[600px] font-bold text-white leading-normal pb-10">{images[currentImageIndex].des}</motion.p>
         <Link href={'/projects'} className=' hover:bg-white/60 duration-1000 hover:text-black font-bold py-3 hover:border-black rounded-full bg-black/20 text-white px-16  border-[1px] border-slate-200'>Projects</Link>
       </div>
-{/*       
-      Previous and Next buttons
-      <button onClick={handlePrev} className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white p-2 rounded-full text-blue-500">
-        <BsArrowLeft />
-      </button>
-      <button onClick={handleNext} className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white p-2 rounded-full text-blue-500">
-        <BsArrowRight />
-      </button> */}
-      <div className='absolute mx-auto conatiner px-4 top-1/2 right-0 transform -translate-y-1/2  '>
+      <motion.div
+          initial={{ y: '-100%', opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          exit={{ y: '100%', opacity: 0 }}
+          transition={{
+            stiffness: 100,
+            damping: 15,
+            duration: 1,
+            ease: "easeIn",
+          }} className='md:block lg:block hidden   absolute mx-auto conatiner px-4 top-1/2 right-0 transform -translate-y-1/2  '>
 {
   icons.map((item,idx)=>{
     return(
@@ -78,13 +90,22 @@ link:"www.faceebook.com"
     )
   })
 }
-</div>
+</motion.div>
     
       
         <div className='flex justify-between absolute bottom-4 px-4 mx-auto container w-full'>
         {images.map((item, index) => (
           <div key={index}>
-            <button onClick={() => handleButtonClick(index)} className='text-yellow-400 cursor-pointer hover:text-white hover:border-red-500 border-b-[4px] font-bold pb-[2px] border-yellow-400'>{item.text}</button>
+            <motion.button
+          initial={{ x: '-100%', opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          exit={{ x: '100%', opacity: 0 }}
+          transition={{
+            stiffness: 100,
+            damping: 15,
+            duration: 1,
+            ease: "easeIn",
+          }} onClick={() => handleButtonClick(index)} className='text-yellow-400 text-[10px] lg:text-sm md:text-sm cursor-pointer hover:text-white hover:border-red-500 border-b-[4px] lg:font-bold md:font-bold pb-[2px] border-yellow-400'>{item.text}</motion.button>
           </div>
         ))}
     
