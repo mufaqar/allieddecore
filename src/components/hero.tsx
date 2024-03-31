@@ -47,9 +47,7 @@ link:"www.faceebook.com"
   return (
     <div className=' -mt-24'>
     <section className="bg-center bg-cover bg-no-repeat relative h-screen " style={{ backgroundImage: `url(${images[currentImageIndex].src})` }}>
-    <div className='absolute inset-0 bg-black opacity-60'></div>
-
-
+    <div className='absolute inset-0 bg-black opacity-70'></div>
       <div className="absolute top-1/2 container left-1/2   px-4 mx-auto transform -translate-x-1/2 -translate-y-1/2 ">
         <motion.p
           initial={{ x: '-100%', opacity: 0 }}
@@ -60,8 +58,8 @@ link:"www.faceebook.com"
             damping: 15,
             duration: 1,
             ease: "easeIn",
-          }} className="md:text-4xl w-[250px] text-2xl lg:text-4xl lg:w-[600px] md:w-[600px] font-bold text-white leading-normal pb-10">{images[currentImageIndex].des}</motion.p>
-        <Link href={'/projects'} className=' hover:bg-white/60 duration-1000 hover:text-black font-bold py-3 hover:border-black rounded-full bg-black/20 text-white px-16  border-[1px] border-slate-200'>Projects</Link>
+          }} className="md:text-4xl w-[250px] text-2xl lg:text-4xl lg:w-[600px] md:w-[600px] font-sans font-normal text-white lg:leading-[60px] pb-10">{images[currentImageIndex].des}</motion.p>
+        <Link href={'/projects'} className=' hover:bg-white/60 duration-1000 hover:text-black font-light font-sans py-2 hover:border-black rounded-full bg-black/20 text-white px-10  border-[1px] border-white/30 tracking-[2px]'>View Projects</Link>
       </div>
       <motion.div
           initial={{ y: '-100%', opacity: 0 }}
