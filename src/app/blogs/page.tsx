@@ -34,7 +34,7 @@ const  Home=()=> {
         <div className='grid md:grid-cols-5 lg:grid-cols-5 grid-cols-2 gap-4'>
           {Categories.map((category:any,idx:number)=>{
             return(
-              <div>
+              <div key={idx}>
                  <button
             className={`rounded-full py-[1px] hover:bg-stone-300 duration-500 px-4 text-[15px] font-thin font-sans border-black/50 border-[1px] ${activeCategory === 'Residential' ? 'bg-stone-300' : ''}`}
             onClick={() => handleCategoryChange(category)}
