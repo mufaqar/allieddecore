@@ -19,9 +19,9 @@ function Blog_sec({data}:any) {
         <Link href='/blogs' className=' text-[12px] border-b-[1px] border-black pb-[2px] tracking-[3px] text-blacl/40'>VIEW BLOG</Link>
         <div
         className='grid lg:grid md:grid-cols-4 lg:grid-cols-4  grid-cols-1 gap-4 py-10'>
-       {data?.map((item:any)=>{return(
+       {data?.map((item:any,idx:number)=>{return(
        
-       <Link href={`/blogs/${item.id}`} >
+       <Link key={idx} href={`/blogs/${item.id}`} >
         <motion.div
           initial={{ y: '100%', opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}

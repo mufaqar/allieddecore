@@ -89,9 +89,9 @@ function Footer() {
 
             </div>
             <div className='icons flex space-x-2 md:mt-36 mt-8 lg:mt-36'>
-              {icons.map((item: any) => {
+              {icons.map((item: any,idx:number) => {
                 return (
-                  <div className=''>
+                  <div key={idx} className=''>
                     <Link href={item.link}><li className='p-[3px] rounded-full text-2xl border-[1px] border-black/50 list-none '>{item.icon}</li></Link>
                   </div>
                 )
