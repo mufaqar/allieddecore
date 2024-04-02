@@ -78,12 +78,13 @@ function Banner() {
                 });
             }, (index + 1) * stepDelay);
         });
-
+    
         // Clear timeouts to avoid memory leaks
         return () => {
             timeoutIds.forEach(timeoutId => clearTimeout(timeoutId));
         };
-    }, []);
+    }, [number]); // Include 'number' in the dependency array
+    
     return (
         <>
             <section className='h-screen bg-cover relative' style={{ backgroundImage: `url(bg.jpg)` }}>

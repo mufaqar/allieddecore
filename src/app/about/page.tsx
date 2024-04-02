@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { FaLinkedinIn } from "react-icons/fa6";
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion'
 function About() {
     const [ishover, setHover] = useState(false);
@@ -90,7 +91,7 @@ function About() {
                 </motion.div>
                 </div>
                 <div>
-                    <img className='cursor-pointer w-full h-72 lg:h-screen md:h-screen' src='/images/about.jpg' alt='img' />
+                    <Image width='800' height='800' className='cursor-pointer w-full h-72 lg:h-screen md:h-screen' src='/images/about.jpg' alt='img' />
                 </div>
                 <div className='container px-4 mx-auto'>
                 <div className='md:py-16 lg:py-16 py-6 '>
@@ -161,7 +162,7 @@ function About() {
                                             >
                                                 {item.project}
                                                 {hoveredImage === item.img && (
-                                                    <img src={hoveredImage} alt='hovered img' className='absolute top-full left-0 w-16 h-16' /> // Position the image absolutely
+                                                    <Image width='500' height='500' src={hoveredImage} alt='hovered img' className='absolute top-full left-0 w-16 h-16' /> // Position the image absolutely
                                                 )}
                                             </td>
                                             <td className='px-16 py-12 font-sans'>{item.context}</td>

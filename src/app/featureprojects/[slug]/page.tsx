@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { IoIosArrowForward } from "react-icons/io";
 import data from '@/data';
+import { motion } from 'framer-motion'
+import Image from 'next/image';
 import Link from 'next/link';
 import { spec } from 'node:test/reporters';
 interface ProjectData {
@@ -71,16 +73,37 @@ export default function Slug({ params: { slug } }: { params: { slug: string } })
       <section className='container mx-auto px-4 pb-16'>
         <div>
           <div className='md:w-[550px] py-24'>
-            <h1 className='text-5xl font-sans font-normal py-16'>About Project</h1>
-            <p className='text-sm text-black/50 text-[12px] pb-24'>{Data?.about}</p>
+            <motion.h1
+            initial={{ y: '100%', opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            exit={{ y: '100%', opacity: 0 }}
+            transition={{
+              stiffness: 100,
+              damping: 15,
+              duration: 1,
+              ease: "easeIn",
+            }}
+            className='text-5xl font-sans font-normal py-16'>About Project</motion.h1>
+            <motion.p
+             initial={{ x: '-100%', opacity: 0 }}
+             whileInView={{ x: 0, opacity: 1 }}
+             exit={{ x: '100%', opacity: 0 }}
+             transition={{
+               stiffness: 100,
+               damping: 15,
+               duration: 1,
+               ease: "easeIn",
+             }}
+            
+            className='text-sm text-black/50 text-[12px] pb-24'>{Data?.about}</motion.p>
             <Link className='text-black/70 tracking-[2px] border-b-[1px] text-[10px] border-black/60 hover:border-red-500 duration-1000 pb-2' href={'/contact'}>REQUEST MORE DETAILS</Link>
           </div>
-          <div className='border-b-[1px] pb-8 border-black/30'><img className='md:h-screen lg:h-screen h-96 w-full' src='/cover.webp' /></div>
+          <div className='border-b-[1px] pb-8 border-black/30'><Image width='800' height='800' alt='img' className='md:h-screen lg:h-screen h-96 w-full' src='/cover.webp' /></div>
           <h1 className=' text-5xl  font-normal py-12 font-sans text-black'>Project Gallery</h1>
           <div className='grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-4'>
             {Data?.images.map((image, idx) => (
               <div key={idx} className='relative cursor-pointer' onMouseEnter={() => setHoveredIndex(idx)} onMouseLeave={() => setHoveredIndex(null)}>
-                <img className='h-96 w-full' src={image} alt={`Image ${idx}`} />
+                <Image width='800' height='800' className='h-96 w-full' src={image} alt={`Image ${idx}`} />
                 <div className="absolute h-full w-full inset-0 bg-black opacity-50"></div>
                 {hoveredIndex === idx && (
                   <button onClick={()=>handlemodel(idx)} className='top-1/2 absolute rounded-full px-8 md:left-1/2 lg:left-1/2'>
@@ -106,7 +129,8 @@ export default function Slug({ params: { slug } }: { params: { slug: string } })
               </svg>
             </button>
             <div className='relative'>
-              <img className='h-[500px] w-[800px]' src={Data?.images[selectedImageIndex]} alt={`Image ${selectedImageIndex}`} />
+            {Data?.images[selectedImageIndex] && (
+            <Image width='800' height='800' className='h-[500px] w-[800px]' src={Data?.images[selectedImageIndex]} alt={`Image ${selectedImageIndex}`} />)}
               <button onClick={handlePrevClick} className='absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/50 rounded-full p-2'>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
