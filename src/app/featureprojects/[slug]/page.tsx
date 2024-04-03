@@ -58,14 +58,14 @@ export default function Slug({ params: { slug } }: { params: { slug: string } })
             <h1 className=' md:text-6xl lg:text-6xl text-3xl  md:w-[750px] lg:w-[750px] font-thin leading-[70px] font-sans text-white'>{Data?.title}</h1>
           </div>
           <div className='text-white md:px-12 lg:px-12 px-4 flex md:w-[800px] lg:w-[800px]  absolute bottom-16 justify-between'>
-            <label className='font-semibold font-sans text-[15px] tracking-[3px]  text-white/60'>Location
-              <p className='pt-2 text-white font-sans font-normal md:text-[22px] lg:text-[22px] lg:tracking-normal md:tracking-normal' >{Data?.location}</p>
+            <label className='font-semibold font-sans text-[12px] lg:text-[15px] md:text-[15px] tracking-[3px]  text-white/60'>Location
+              <p className='pt-2 text-white font-sans font-normal text-[12px] md:text-[22px] lg:text-[22px] lg:tracking-normal md:tracking-normal' >{Data?.location}</p>
             </label>
-            <label className='font-semibold font-sans text-[15px] tracking-[3px] text-white/60 ' >Project Size
-              <p className='pt-2 text-white font-sans font-normal md:text-[22px] lg:text-[22px] lg:tracking-normal  md:tracking-normal'>{Data?.size}</p>
+            <label className='font-semibold font-sans text-[12px] lg:text-[15px] md:text-[15px]  tracking-[3px] text-white/60 ' >Project Size
+              <p className='pt-2 text-white font-sans font-normal text-[12px] md:text-[22px] lg:text-[22px] lg:tracking-normal  md:tracking-normal'>{Data?.size}</p>
             </label>
-            <label className='font-semibold font-sans text-[15px] tracking-[3px] text-white/60'>Project Date
-              <p className='pt-2 text-white font-sans font-normal md:text-[22px] lg:text-[22px] lg:tracking-normal   md:tracking-normal'>{Data?.date}</p>
+            <label className='font-semibold font-sans text-[12px] lg:text-[15px] md:text-[15px]  tracking-[3px] text-white/60'>Project Date
+              <p className='pt-2 text-white font-sans font-normal text-[12px] md:text-[22px] lg:text-[22px] lg:tracking-normal   md:tracking-normal'>{Data?.date}</p>
             </label>
           </div>
         </div>
