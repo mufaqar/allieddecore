@@ -39,7 +39,7 @@ function Navbar() {
         </div>
         <div className="md:block hidden   justify-center">
           <Link href="/">
-            <Image src="/images/logo.svg" alt="Rehab Fit" width={280} height={56} className='md:w-auto w-56' />
+            <Image src="/logo.png" alt="Rehab Fit" width={280} height={0} className='md:w-80 w-56' />
           </Link>
 
         </div>
