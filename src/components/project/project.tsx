@@ -56,7 +56,7 @@ function Projects({ data }: any) {
           </div>
         </motion.div>
         <p className='text-sm'>Request more information<br />
-          info@alliedcore.pk</p>
+          info@alliedcore.com</p>
       </div>
       <Link href='/featureprojects' className=' text-[12px] border-b-[1px] border-black pb-[2px] tracking-[3px] text-blacl/40'>VIEW Features</Link>
       <div className='grid md:grid md:grid-cols-2 lg:grid-cols-2 gap-2 py-10  grid-cols-1'>

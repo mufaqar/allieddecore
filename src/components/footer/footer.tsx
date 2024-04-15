@@ -79,7 +79,7 @@ function Footer() {
               </div>
               <div>
                 <h1 className='font-sans text-xl font-normal'>Contact</h1>
-                <p className='text-[13px] text-black/50 font-sans'>info@alliedcore.pk</p>
+                <p className='text-[13px] text-black/50 font-sans'>info@alliedcore.com</p>
               </div>
 
             </div>

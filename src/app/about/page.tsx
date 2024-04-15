@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { FaLinkedinIn } from "react-icons/fa6";
 import Link from 'next/link';
 import Image from 'next/image';
+import SeoMeta from '@/components/seo'
 import { motion } from 'framer-motion'
 function About() {
     const [ishover, setHover] = useState(false);
@@ -62,6 +63,8 @@ function About() {
 
     ]
     return (
+        <>
+        <SeoMeta title="About" description="Alliedcore" url="https://www.allieddecore.com/about" />
         <section className='md:py-28 lg:py-28 py-10'>
             <div className='container px-4 mx-auto'>
                 <motion.h1
@@ -158,6 +161,7 @@ function About() {
 
             </div>
         </section>
+        </>
     );
 }
 

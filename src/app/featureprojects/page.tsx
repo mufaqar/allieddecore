@@ -13,7 +13,6 @@ function Features() {
           <div className='px-4 mx-auto container opacity-95'>
             <p className='pt-28 text-sm font-normal font-sans text-white'>--------    <span className='pl-4 tracking-[2px]'>INSIGHTS</span></p>
             <h1 className='pt-16 text-6xl md:w-[750px] font-thin leading-[70px] font-sans text-white'>All Features</h1>
-
           </div>
         </div>
       </div>

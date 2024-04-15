@@ -54,7 +54,7 @@ const  Home=()=> {
               </div>
         </div>
         <p className='text-sm'>Request more information<br/>
-          info@alliedcore.pk</p>
+          info@alliedcore.com</p>
       </div>
     </div>
 
