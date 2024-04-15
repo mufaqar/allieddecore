@@ -13,7 +13,7 @@ function Navbar() {
   const icons = [
     {
       icon: <FaWhatsappSquare />,
-      link: 'https://api.whatsapp.com/send?phone=923203588468&text=Physiotherapy%20Clinic%20Innovation,%20Integration,%20Accessibility'
+      link: 'https://api.whatsapp.com/send?phone=923460912630&text=Physiotherapy%20Clinic%20Innovation,%20Integration,%20Accessibility'
     },
     {
       icon: <TiSocialFacebook />,
@@ -66,7 +66,7 @@ function Navbar() {
           <Link href="/about" className=""><li className='l hover:text-[#F28123]  py-4 px-4 text-[18px] cursor-pointer list-none capitalize  text-white hover:scale-95 duration-200 link-underline'>About</li></Link>
           <Link href="/load-market" className="flex items-center  hover:text-[#F28123] overflow-hidden py-4 px-4 text-[18px] cursor-pointer list-none capitalize  text-white hover:scale-95  duration-200 link-underline">
             <Image src="/images/whatapp.svg" alt="Rehab Fit" width={450} height={650} className='w-7 pr-2' />
-            +92 320 3588468
+            +92 346 0912630
           </Link>
           <Link href="/contact" className="flex items-center space-x-2 hover:text-[#F28123] overflow-hidden py-4 px-4 text-[18px] cursor-pointer list-none capitalize  text-white hover:scale-95  duration-200 link-underline">
             Consult now <BsArrowRight />
@@ -74,8 +74,8 @@ function Navbar() {
           <div className='px-4 md:flex lg:flex justify-between items-center space-y-4 md:space-y-0 lg:space-y-0'>
             <div>
               <p className='text-white text-sm font-sans py-6 '>CONTACT DETAILS</p>
-              <p className='text-white text-[12px] font-thin font-sans '>EMAIL ADDRESS — INFO@ALLIEDCORE.PK</p>
-              <p className='text-white text-[12px] font-thin text-sm font-sans pt-2'>PHONE NUMBER — +92 320 3588468</p>
+              <p className='text-white text-[12px] font-thin font-sans '>EMAIL ADDRESS — INFO@UBBS.UK</p>
+              <p className='text-white text-[12px] font-thin text-sm font-sans pt-2'>PHONE NUMBER — +44 (0) 7519614140</p>
             </div>
             <div className=' flex space-x-4   '>
               {
