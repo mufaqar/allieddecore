@@ -7,8 +7,8 @@ import Navbar from '@/components/navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Rehab Fit | Lahore Poly Clinic',
-  description: 'We Are Committed To Ensuring That Our Clients Have Easy Access To Our Physiotherapy Services.',
+  title: 'Allied Core | Beautifully crafted global homes and retreats.',
+  description: 'We Are Committed To Ensuring That Our Clients Have Easy Access To Our  Services.',
 }
 
 export default function RootLayout({
@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
-        </body>
+        <Footer />
+      </body>
     </html>
   )
 }

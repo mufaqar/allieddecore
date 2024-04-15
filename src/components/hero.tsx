@@ -25,7 +25,7 @@ function Hero() {
   const icons = [
     {
       icon: <FaWhatsappSquare />,
-      link: 'https://api.whatsapp.com/send?phone=923203588468&text=Physiotherapy%20Clinic%20Innovation,%20Integration,%20Accessibility'
+      link: 'https://api.whatsapp.com/send?phone=923460912630&text=Physiotherapy%20Clinic%20Innovation,%20Integration,%20Accessibility'
     },
     {
       icon: <TiSocialFacebook />,
