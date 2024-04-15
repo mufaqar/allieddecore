@@ -5,7 +5,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import SeoMeta from '@/components/seo'
 import { motion } from 'framer-motion'
-function About() {
+import { metadata } from '../layout';
+import { title } from 'process';
+export default function () {
     const [ishover, setHover] = useState(false);
     const [hoveredImage, setHoveredImage] = useState('');
     const data = [{
@@ -63,8 +65,7 @@ function About() {
 
     ]
     return (
-        <>
-        <SeoMeta title="About" description="Alliedcore" url="https://www.allieddecore.com/about" />
+        
         <section className='md:py-28 lg:py-28 py-10'>
             <div className='container px-4 mx-auto'>
                 <motion.h1
@@ -161,8 +162,5 @@ function About() {
 
             </div>
         </section>
-        </>
     );
 }
-
-export default About;
