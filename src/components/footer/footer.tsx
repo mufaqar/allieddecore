@@ -74,17 +74,12 @@ function Footer() {
           <div className=''>
             <div className='md:flex justify-between md:w-[450px]'>
               <div>
-                <h1 className='font-sans text-xl font-normal'>London</h1>
-                <p className='text-[13px] text-black/50 font-sans'>London, United Kingdom</p>
-              </div>
-              <div>
-                <h1 className='font-sans text-xl font-normal'>Vilnius</h1>
-                <p className='text-[13px] text-black/50 font-sans'>Kalinausko 24-7<br />
-                  Vilnius 03107</p>
+                <h1 className='font-sans text-xl font-normal'>Islamabad</h1>
+                <p className='text-[13px] text-black/50 font-sans'>Islamabad, Pakistan</p>
               </div>
               <div>
                 <h1 className='font-sans text-xl font-normal'>Contact</h1>
-                <p className='text-[13px] text-black/50 font-sans'>info@ubbs.uk</p>
+                <p className='text-[13px] text-black/50 font-sans'>info@alliedcore.pk</p>
               </div>
 
             </div>
@@ -105,7 +100,7 @@ function Footer() {
                 <input type='text' className='border-b-[1px] md:w-[250px] text-sm text-black/50 font-sans font-thin border-black/30 focus:outline-none placeholder-gray-400' placeholder='Enter Your Email' />
                 <button className=' rounded-full border-black/50 border-[1px] px-4 py-1 text-sm text-black/50'>Submit</button>
               </div>
-              <p className='pt-12 text-black/50 text-[11px]'>UBBS London is an architecture and interior design firm based in London. Our services include Architecture, Interior Design, Construction and Administration and Specification.</p>
+              <p className='pt-12 text-black/50 text-[11px]'>Alliedcore Islamabad is an architecture and interior design firm based in Islamabad. Our services include Architecture, Interior Design, Construction and Administration and Specification.</p>
             </div>
           </div>
         </motion.div>
@@ -122,7 +117,7 @@ function Footer() {
         
         className='md:flex lg:flex justify-between py-8'>
           <div className='md:flex md:w-[650px] lg:w-[650px] justify-between'>
-            <p className='text-black/50 text-sm font-sans font-semibold'>@ Copyright UBBS London</p>
+            <p className='text-black/50 text-sm font-sans font-semibold'>@ Copyright Alliedcore Islamabad</p>
             <div>
             <Link href={''} className='text-black/50 text-sm font-sans font-semibold'>
               Privacy Policy</Link></div>
@@ -131,7 +126,7 @@ function Footer() {
               Terms and Conditions</Link></div>
           </div>
           <div>
-            <Link href={''} className='text-black/50 text-sm font-sans font-semibold'>Website by Rattlesnake Group</Link>
+            <Link href={''} className='text-black/50 text-sm font-sans font-semibold'>Website by Mufaqar Islam</Link>
           </div>
         </motion.div>
       </div>

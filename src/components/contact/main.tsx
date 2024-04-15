@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 import Link from 'next/link';
 import { useFormik } from "formik";
 import { useForm, SubmitHandler } from "react-hook-form";
-// import { contactform } from '@/schemas/contactform';
 function Main() {
   const {
     register,
@@ -43,7 +42,7 @@ function Main() {
         <div className="h-96 w-full bg-cover bg-center relative" style={{ backgroundImage: `url('contact.webp')` }}>
           <div className="absolute h-full w-full inset-0 bg-black opacity-70"></div>
           <div className='px-4 mx-auto container opacity-95'>
-            <p className='pt-28 text-sm font-normal font-sans text-white pb-4'>--------    <span className='pl-4 tracking-[2px]'>BASED IN LONDON</span></p>
+            <p className='pt-28 text-sm font-normal font-sans text-white pb-4'>--------    <span className='pl-4 tracking-[2px]'>BASED IN Islamabad</span></p>
             <h1 className='top-1/2 text-7xl md:w-[750px] font-light leading-[70px] font-sans text-white'>Get in touch</h1>
 
           </div>
@@ -52,67 +51,23 @@ function Main() {
 
       <section className=' w-full h-auto md:pt-14 lg:pt-14 pt-6'>
         <div className=' px-10  w-full pb-28'>
-        <hr className="h-px mt-16 mb-16 px-4 bg-gray-200 border-0 dark:bg-gray-700"/>
+          <hr className="h-px mt-16 mb-16 px-4 bg-gray-200 border-0 dark:bg-gray-700" />
           <motion.div
-           initial={{ x: '-100%', opacity: 0 }}
-           whileInView={{ x: 0, opacity: 1 }}
-           exit={{ x: '100%', opacity: 0 }}
-           transition={{
-             stiffness: 100,
-             damping: 15,
-             duration: 1,
-             ease: "easeIn",
-           }}
-          className='grid grid-cols-2  md:w-[1200px]'>
-            
+            initial={{ x: '-100%', opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            exit={{ x: '100%', opacity: 0 }}
+            transition={{
+              stiffness: 100,
+              damping: 15,
+              duration: 1,
+              ease: "easeIn",
+            }}
+            className='grid grid-cols-2 xl:w-[1200px] lg:w-[1200px]  md:w-[1200px]'>
+
             <p>General</p>
-            <Link href={''} className='text-[14px]  text-black/50'>info@ubbs.uk</Link>
+            <Link href={''} className='text-[14px]  text-black/50'>info@alliedcore.pk</Link>
           </motion.div>
-          <hr className="h-px mt-16 mb-8 px-4 bg-gray-200 border-0 dark:bg-gray-700"/>
-          <motion.div 
-           initial={{ y: '100%', opacity: 0 }}
-           whileInView={{ y: 0, opacity: 1 }}
-           exit={{ y: '100%', opacity: 0 }}
-           transition={{
-             stiffness: 100,
-             damping: 15,
-             duration: 1,
-             ease: "easeIn",
-           }}
-          
-          className='grid grid-cols-2  md:w-[1200px]  lg:w-[1200px]'>
-            <p>Social</p>
-            <div className=''>
-              <Link href={''}><li className='list-none hover:underline font-sans text-[15px] text-black/60'>Instagram</li></Link>
-              <Link href={''}><li className='list-none hover:underline font-sans text-[15px] text-black/60'>Linkedin</li></Link>
-              <Link href={''}><li className='list-none  hover:underline font-sans text-[15px] text-black/60'>Faceebook</li></Link>
-              <Link href={''}><li className='list-none hover:underline font-sans text-[15px] text-black/60'>Pinterest</li></Link>
-            </div>
-          </motion.div>
-          <hr className="h-px mt-16 mb-8 px-4 bg-gray-200 border-0 dark:bg-gray-700"/>
-          <motion.div
-           initial={{ x: '-100%', opacity: 0 }}
-           whileInView={{ x: 0, opacity: 1 }}
-           exit={{ x: '100%', opacity: 0 }}
-           transition={{
-             stiffness: 100,
-             damping: 15,
-             duration: 1,
-             ease: "easeIn",
-           }}
-          className='grid grid-cols-2 lg:w-[1200px] md:w-[1200px]'>
-            <p>Studio</p>
-            <div className='md:flex lg:flex md:space-x-36 lg:space-x-36 space-y-4 md:space-y-0 lg:space-y-0'>
-              <label>London
-                <p className='list-none font-sans text-[15px] text-black/60'>London, United Kingdom</p>
-              </label>
-              <label>Vilnius
-                <p className='list-none font-sans text-[15px] text-black/60'>Kalinausko 24-7<br />
-                  Vilnius 03107</p>
-              </label>
-            </div>
-          </motion.div>
-          <hr className="h-px mt-16 mb-8 px-4 bg-gray-200 border-0 dark:bg-gray-700"/>
+          <hr className="h-px mt-16 mb-8 px-4 bg-gray-200 border-0 dark:bg-gray-700" />
           <motion.div
             initial={{ y: '100%', opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -123,11 +78,52 @@ function Main() {
               duration: 1,
               ease: "easeIn",
             }}
-          className='grid grid-cols-2 lg:w-[1200px] md:w-[1200px]'>
+
+            className='grid grid-cols-2  md:w-[1200px] xl:w-[1200px]   lg:w-[1200px]'>
+            <p>Social</p>
+            <div className=''>
+              <Link href={''}><li className='list-none hover:underline font-sans text-[15px] text-black/60'>Instagram</li></Link>
+              <Link href={''}><li className='list-none hover:underline font-sans text-[15px] text-black/60'>Linkedin</li></Link>
+              <Link href={''}><li className='list-none  hover:underline font-sans text-[15px] text-black/60'>Faceebook</li></Link>
+              <Link href={''}><li className='list-none hover:underline font-sans text-[15px] text-black/60'>Pinterest</li></Link>
+            </div>
+          </motion.div>
+          <hr className="h-px mt-16 mb-8 px-4 bg-gray-200 border-0 dark:bg-gray-700" />
+          <motion.div
+            initial={{ x: '-100%', opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            exit={{ x: '100%', opacity: 0 }}
+            transition={{
+              stiffness: 100,
+              damping: 15,
+              duration: 1,
+              ease: "easeIn",
+            }}
+            className='grid grid-cols-2 lg:w-[1200px] xl:w-[1200px]  md:w-[1200px]'>
+            <p>Studio</p>
+            <div className='md:flex lg:flex md:space-x-36 lg:space-x-36 space-y-4 md:space-y-0 lg:space-y-0'>
+              <label>Islamabad , pk
+                <p className='list-none font-sans text-[15px] text-black/60'>Islamabad , pk, United Kingdom</p>
+              </label>
+              
+            </div>
+          </motion.div>
+          <hr className="h-px mt-16 mb-8 px-4 bg-gray-200 border-0 dark:bg-gray-700" />
+          <motion.div
+            initial={{ y: '100%', opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            exit={{ y: '100%', opacity: 0 }}
+            transition={{
+              stiffness: 100,
+              damping: 15,
+              duration: 1,
+              ease: "easeIn",
+            }}
+            className='grid grid-cols-2 lg:w-[1200px] xl:w-[1200px] md:w-[1200px]'>
             <p>Career</p>
             <div >
-              <p className='list-none font-sans md:w-[500px] pb-4 text-[14px] text-black/60'>We are constantly seeking talented professionals to join our team and create innovative and inspiring designs. If you're passionate about design and want to make a meaningful impact — you are welcome to get in touch.</p>
-              <Link href={''} className='text-black/60 font-sans text-[15px] '>info@ubbs.uk</Link>
+              <p className='list-none font-sans md:w-[500px] lg:w-[500px] xl:w-[500px] pb-4 text-[14px] text-black/60'>We are constantly seeking talented professionals to join our team and create innovative and inspiring designs. If you're passionate about design and want to make a meaningful impact — you are welcome to get in touch.</p>
+              <Link href={''} className='text-black/60 font-sans text-[15px] '>info@alliedcore.pk</Link>
             </div>
           </motion.div>
         </div>
@@ -144,7 +140,7 @@ function Main() {
               duration: 1,
               ease: "easeIn",
             }}
-          className='lg:w-[500px] md:w-[500px] px-4  m-auto' onSubmit={handleSubmit(onSubmit)}>
+            className='lg:w-[500px] md:w-[500px] xl:w-[500px]  px-4  m-auto' onSubmit={handleSubmit(onSubmit)}>
             <div className='w-full '>
               <motion.h1
                 initial={{ x: '-100%', opacity: 0 }}
@@ -156,7 +152,7 @@ function Main() {
                   duration: 1,
                   ease: "easeIn",
                 }}
-              className='font-serif font-light text-3xl lg:text-5xl md:text-5xl pb-4'>Contact form</motion.h1>
+                className='font-serif font-light text-3xl lg:text-5xl md:text-5xl pb-4'>Contact form</motion.h1>
               <input
                 type='text'
                 id='name'
@@ -188,7 +184,7 @@ function Main() {
               />
               {errors.name && <span className='text-xs text-red-500'>This field is required</span>}
             </div>
-            
+
             <div className='w-full  py-4'>
 
               <textarea

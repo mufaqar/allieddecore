@@ -14,7 +14,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f1.jpg',
         title: 'Sunset Villa',
-        location: 'Los Angeles, US',
+        location: 'Lahore',
         id: '1',
         category: 'Residential',
         date: 'January 2024',
@@ -25,7 +25,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f2.webp',
         title: 'Golden Mile Penthouse',
-        location: 'London, United Kingdom',
+        location: 'Islamabad, PK',
         id: '2',
         category: 'Retail',
         date: 'February 2024',
@@ -36,7 +36,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f3.jpg',
         title: 'Premier Golf & Country Club',
-        location: 'Europe',
+        location: 'Pakistan',
         id: '3',
         category: 'Residential',
         date: 'March 2024',
@@ -47,7 +47,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f4.webp',
         title: 'World Class Fitness Center',
-        location: 'Moscow, Russia',
+        location: 'Islamabad',
         id: '4',
         category: 'Retail',
         date: 'April 2024',
@@ -58,7 +58,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f5.jpg',
         title: 'Kauko Apartments',
-        location: 'Moscow',
+        location: 'Pakistan',
         id: '5',
         category: 'Commercial',
         date: 'May 2024',
@@ -69,7 +69,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f6.webp',
         title: 'Dufry / Regstaer Office',
-        location: 'Moscow, Russia',
+        location: 'Islamabad',
         id: '6',
         category: 'Hospitality',
         date: 'June 2024',
@@ -80,7 +80,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f7.jpg',
         title: 'One Hyde Park',
-        location: 'London, UK',
+        location: 'Islamabad, PK',
         id: '7',
         category: 'Hospitality',
         date: 'July 2024',
@@ -91,7 +91,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f8.jpg',
         title: 'Bocconchino Soho',
-        location: 'London, UK',
+        location: 'Islamabad, PK',
         id: '8',
         category: 'Retail',
         date: 'August 2024',
@@ -102,7 +102,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f9.webp',
         title: 'The Lyceum and Hotel',
-        location: 'Lithuania, Vilnius',
+        location: 'Pakistan',
         id: '9',
         category: 'Hospitality',
         date: 'March 2024',
@@ -113,7 +113,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f10.jpg',
         title: 'White Rabbit Restaurant ',
-        location: 'Moscow',
+        location: 'Pakistan',
         id: '10',
         category: 'Residential',
         date: 'August 2024',
@@ -124,7 +124,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f11.webp',
         title: 'Elysian Residence',
-        location: 'Frankfurt, Germany',
+        location: 'Pakistan',
         id: '11',
         category: 'Commercial',
         date: 'July 2024',
@@ -135,7 +135,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f12.webp',
         title: 'Clouds Villa',
-        location: 'Europe',
+        location: 'Pakistan',
         id: '12',
         category: 'Hospitality',
         date: 'August 2024',
@@ -146,7 +146,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f13.jpg',
         title: 'Bathhouse Complex with Restaurant',
-        location: 'Moscow region',
+        location: 'Pakistan ',
         id: '13',
         category: 'Commercial',
         date: 'June 2024',
@@ -157,7 +157,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f14.webp',
         title: 'Lalique Office',
-        location: 'Moscow, Russia',
+        location: 'Islamabad',
         id: '14',
         category: 'Residential',
         date: 'January 2024',
@@ -168,7 +168,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f15.webp',
         title: 'Sakhalin Restaurant',
-        location: 'Moscow, Russia',
+        location: 'Islamabad',
         id: '15',
         category: 'Retail',
         date: 'September 2024',
@@ -179,7 +179,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f16.webp',
         title: 'Madison Park',
-        location: 'London, United Kingdom',
+        location: 'Islamabad',
         id: '16',
         category: 'Hospitality',
         date: 'August 2024',
@@ -190,7 +190,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f17.webp',
         title: 'Embassy House',
-        location: 'Lithuania, Vilnius',
+        location: 'Pakistan',
         id: '17',
         category: 'Residential',
         date: 'Feburary 2024',
@@ -201,7 +201,7 @@ const data: ProjectData[] = [
     {
         img: '/features/f18.jpg',
         title: 'Balchug Residence',
-        location: 'Moscow',
+        location: 'Pakistan',
         id: '18',
         category: 'Commercial',
         date: 'April 2024',

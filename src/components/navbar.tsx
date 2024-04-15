@@ -28,7 +28,7 @@ function Navbar() {
       link: "www.linkdein.com"
     }
   ]
-  
+
   return (
     <nav className="absolute top-0 w-full bg-gradient-to-b from-black/40 to-white/0 sticky-nav z-50" >
       <div className="container mx-auto flex items-center justify-between py-5 px-4 relative z-10">
@@ -47,7 +47,7 @@ function Navbar() {
           onClick={() => setNav(!nav)}
           className="cursor-pointer  text-white "
         >
-          {nav ? <FaTimes size={30} /> : <RiMenuUnfoldLine  size={30} />}
+          {nav ? <FaTimes size={30} /> : <RiMenuUnfoldLine size={30} />}
         </div>
       </div>
       {nav && (
@@ -74,24 +74,24 @@ function Navbar() {
           <div className='px-4 md:flex lg:flex justify-between items-center space-y-4 md:space-y-0 lg:space-y-0'>
             <div>
               <p className='text-white text-sm font-sans py-6 '>CONTACT DETAILS</p>
-              <p className='text-white text-[12px] font-thin font-sans '>EMAIL ADDRESS — INFO@UBBS.UK</p>
-              <p className='text-white text-[12px] font-thin text-sm font-sans pt-2'>PHONE NUMBER — +44 (0) 7519614140</p>
+              <p className='text-white text-[12px] font-thin font-sans '>EMAIL ADDRESS — INFO@ALLIEDCORE.PK</p>
+              <p className='text-white text-[12px] font-thin text-sm font-sans pt-2'>PHONE NUMBER — +92 320 3588468</p>
             </div>
             <div className=' flex space-x-4   '>
               {
                 icons.map((item, idx) => {
                   return (
                     <motion.div
-                    initial={{ y: '-100%', opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          exit={{ y: '100%', opacity: 0 }}
-          transition={{
-            stiffness: 100,
-            damping: 15,
-            duration: 1,
-            ease: "easeIn",
-          }}
-                    key={idx}>
+                      initial={{ y: '-100%', opacity: 0 }}
+                      whileInView={{ y: 0, opacity: 1 }}
+                      exit={{ y: '100%', opacity: 0 }}
+                      transition={{
+                        stiffness: 100,
+                        damping: 15,
+                        duration: 1,
+                        ease: "easeIn",
+                      }}
+                      key={idx}>
                       <Link href={item.link}
                         className="group relative inline-block overflow-hidden rounded-full p-2 border-gray-100 hover:border-none  border-[1px] font-bold text-2xl  text-white  focus:outline-none focus:ring active:bg-indigo-600 active:text-white"
                       >
@@ -105,7 +105,7 @@ function Navbar() {
                   )
                 })
               }
-              </div>
+            </div>
           </div>
         </motion.div>
       )}

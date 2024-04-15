@@ -5,8 +5,7 @@ import Main from '@/components/contact/main'
 
 function page() {
   return (
-    <div>
-       
+    <div> 
         <Main/>
     </div>
   )

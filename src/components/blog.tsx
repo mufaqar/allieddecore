@@ -18,7 +18,7 @@ function Blog_sec({data}:any) {
         className='md:text-5xl lg:text-5xl text-3xl font-normal font-sans mb-6 '>Latest insights</motion.h1>
         <Link href='/blogs' className=' text-[12px] border-b-[1px] border-black pb-[2px] tracking-[3px] text-blacl/40'>VIEW BLOG</Link>
         <div
-        className='grid lg:grid md:grid-cols-4 lg:grid-cols-4  grid-cols-1 gap-4 py-10'>
+        className='grid lg:grid md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4  grid-cols-1 gap-4 py-10'>
        {data?.map((item:any,idx:number)=>{return(
        
        <Link key={idx} href={`/blogs/${item.id}`} >

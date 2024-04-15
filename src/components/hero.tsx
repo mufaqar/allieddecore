@@ -12,12 +12,12 @@ function Hero() {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // 20 seconds
+    }, 5000); 
     return () => clearTimeout(timeoutId);
   }, [currentImageIndex]);
 
   const images = [
-    { src: '/home/home1.jpg', des: 'Leading architecture & interior design studio in London.', text: 'Our Company' },
+    { src: '/home/home1.jpg', des: 'Leading architecture & interior design studio in Islamabad.', text: 'Our Company' },
     { src: '/home/home2.jpg', des: 'Beautifully crafted global homes and retreats.', text: 'Residential' },
     { src: '/home/home3.webp', des: 'Commercial focused design led environments', text: 'Commercial' },
     { src: '/home/home4.jpg', des: 'The future of how we live, work and play.', text: 'Hospitality' },
@@ -91,7 +91,7 @@ function Hero() {
         </motion.div>
 
 
-        <div className='flex justify-between absolute bottom-4 px-4 mx-auto container w-full'>
+        <div className='flex  absolute bottom-8 lg:space-x-36 items-center space-x-4 xl:space-x-48 md:space-x-36 px-4 mx-auto container justify-center w-full'>
           {images.map((item, index) => (
             <div key={index}>
               <motion.button
@@ -103,7 +103,7 @@ function Hero() {
                   damping: 15,
                   duration: 1,
                   ease: "easeIn",
-                }} onClick={() => handleButtonClick(index)} className='text-yellow-400 text-[10px] lg:text-sm md:text-sm cursor-pointer hover:text-white hover:border-red-500 border-b-[4px] lg:font-bold md:font-bold pb-[2px] border-yellow-400'>{item.text}</motion.button>
+                }} onClick={() => handleButtonClick(index)} className='text-white text-[10px] xl:tracking-widest lg:tracking-widest md:tracking-widest lg:text-sm md:text-sm cursor-pointer hover:text-teal-400 border-red-500 border-b-[4px] lg:font-bold md:font-bold pb-[2px] hover:border-white whitespace-nowrap'>{item.text}</motion.button>
             </div>
           ))}
 

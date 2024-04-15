@@ -112,7 +112,7 @@ function Banner() {
                            duration: 1,
                            ease: "easeIn",
                          }}
-                        className='text-white md:text-sm lg:text-sm text-[12px] font-normal font-sans'>Our portfolio showcases a diverse range of projects in different scales and styles, reflecting our commitment to excellence and innovation in design. With a team of experienced architects, designers and engineers, UBBS provides end-to-end solutions that change people's life.</motion.p>
+                        className='text-white md:text-sm lg:text-sm text-[12px] font-normal font-sans'>Our portfolio showcases a diverse range of projects in different scales and styles, reflecting our commitment to excellence and innovation in design. With a team of experienced architects, designers and engineers, ALLIEDCORE provides end-to-end solutions that change people's life.</motion.p>
                         <div className='grid grid-cols-3 lg:grid-cols-5 md:grid-cols-5 gap-y-8 lg:gap-y-14 md:gap-y-14 py-10'>
                             {data.map((item, idx) => (
                                 <div key={idx}>
